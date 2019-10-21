@@ -11,40 +11,30 @@ Java, Spring, Angular Programmierung was noch?!
         <mat-card-content>Inhalt</mat-card-content>
     </mat-card>
     <p>
-        <button type="button" class="btn btn-outline-primary" (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample2">
+        <button mat-raised-button color="primary" (click)="toggle(2)">
             Software Entwicklung
         </button>
     </p>
-    <div id="collapseExample2" *ngIf="isCollapsed2">
-        <div class="card">
-            <div class="card-block">
-                Mit Framework du machst gute Homepage!
-            </div>
-        </div>
-    </div>
+    <mat-card [@openClose]="isCollapsed2 ? 'open' : 'closed'" class="open-close-container">
+        <mat-card-title>Frameworks</mat-card-title>
+        <mat-card-content>Inhalt</mat-card-content>
+    </mat-card>
     <p>
-        <button type="button" class="btn btn-outline-primary" (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseExample3">
+        <button mat-raised-button color="primary" (click)="toggle(3)">
             Persönliches
         </button>
     </p>
-    <div id="collapseExample3" *ngIf="isCollapsed3">
-        <div class="card">
-            <div class="card-block">
-                Keine Ahnung im Moment.
-            </div>
-        </div>
-    </div>
+    <mat-card [@openClose]="isCollapsed3 ? 'open' : 'closed'" class="open-close-container">
+        <mat-card-title>Frameworks</mat-card-title>
+        <mat-card-content>Inhalt</mat-card-content>
+    </mat-card>
     <p>
-        <button type="button" class="btn btn-outline-primary" (click)="isCollapsed4 = !isCollapsed4" [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseExample4">
+        <button mat-raised-button color="primary" (click)="toggle(4)">
             Physik und Mathematik
         </button>
     </p>
-    <div id="collapseExample4" *ngIf="isCollapsed4">
-        <div class="card">
-            <div class="card-block">
-                Mein Studium der Physik und Mathematik ist bereits einige Jahre her, jedoch interessiere ich mich immer noch teilweise für die aktuelle Forschung. So nehme ich in unregelmäßigen Abständen an Konferenzen der Differentialgeometrie in Münster teil. Außerdem
-                habe ich mit großer Freude den Nobelpreis der Physik im Jahr 2019 verfolgt.
-            </div>
-        </div>
-    </div>
+    <mat-card [@openClose]="isCollapsed4 ? 'open' : 'closed'" class="open-close-container">
+        <mat-card-title>Frameworks</mat-card-title>
+        <mat-card-content>Inhalt</mat-card-content>
+    </mat-card>
 </div>

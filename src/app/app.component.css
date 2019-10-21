@@ -2,3 +2,8 @@ mat-sidenav {
     max-width: 280px;
     width: 70%;
 }
+
+.content {
+    margin-right: 10%;
+    margin-left: 10%;
+}
