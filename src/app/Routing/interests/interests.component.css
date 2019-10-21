@@ -1,0 +1,12 @@
+.content {
+    text-align: center;
+}
+
+:host {
+    display: block;
+}
+
+.open-close-container {
+    color: #000000;
+    font-size: 20px;
+}
