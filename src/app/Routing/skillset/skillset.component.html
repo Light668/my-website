@@ -1,2 +1,81 @@
 <p>skillset works!</p>
 Spring Angular JavaScript CSS HTML Datenbanken Testing, was noch?
+
+<mat-card>
+    <mat-card-title class="skillsheet-title">
+        IT-Skillsheet
+    </mat-card-title>
+    <div class="skill-legend" fxLayout="row" fxLayoutAlign="space-between center">
+        <span class="item" *ngFor="let idx of [1,2,3,4,5,6,7,8,9,10]">{{idx}}</span>
+        <!-- <span fxFlex *ngIf="media.isActive('lt-sm') && (idx == 1 || idx %5 ==0)">
+            {{idx}}</span> -->
+    </div>
+    <mat-accordion multi=" true ">
+        <mat-expansion-panel>
+
+            <mat-expansion-panel-header>
+                <!--      <div class="skill-legend ">
+                    Test
+                </div> -->
+
+
+                <p class="bar-label ">Spring</p>
+                <mat-progress-bar mode="determinate " [value]="45" aria-labelledby="Spring " aria-label="text ">
+                </mat-progress-bar>
+            </mat-expansion-panel-header>
+
+            <p class="bar-label ">DI mit Maven</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="40 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+
+            <p class="bar-label ">Spring MVC</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="40 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+
+            <p class="bar-label ">JPA / Jdbc</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="40 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+
+            <p class="bar-label ">Spring Security</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="27 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+
+            <p class="bar-label ">Testing / Mockito</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="27 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <p class="bar-label ">Frontend</p>
+                <mat-progress-bar mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+                </mat-progress-bar>
+            </mat-expansion-panel-header>
+            <p class="bar-label ">Angular</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+            <p class="bar-label ">HTML 5</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+            <p class="bar-label ">CSS3</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <p class="bar-label ">Programmiersprachen</p>
+                <mat-progress-bar mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+                </mat-progress-bar>
+            </mat-expansion-panel-header>
+            <p class="bar-label ">Java</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+            <p class="bar-label ">JavaScript</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+            <p class="bar-label ">TypeScript</p>
+            <mat-progress-bar class="sub-bar " mode="determinate " [value]="4 " aria-labelledby="Spring " aria-label="text ">
+            </mat-progress-bar>
+        </mat-expansion-panel>
+    </mat-accordion>
+</mat-card>

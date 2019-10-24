@@ -15,6 +15,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +29,9 @@ import { MatCardModule } from '@angular/material/card';
     AboutsiteComponent
   ],
   imports: [
+    MatExpansionModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
     MatCardModule,
     MatStepperModule,
     MatIconModule,
