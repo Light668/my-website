@@ -1,12 +1,17 @@
 .content {
-    text-align: center;
+    /* text-align: center; */
 }
 
 :host {
     display: block;
 }
 
-.open-close-container {
+.item-card {
     color: #000000;
-    font-size: 20px;
+    /* font-size: 18px; */
+    margin-bottom: 15px;
+}
+
+#list-sport {
+    margin: 5px;
 }

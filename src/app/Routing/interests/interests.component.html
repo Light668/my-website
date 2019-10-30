@@ -1,40 +1,49 @@
-Java, Spring, Angular Programmierung was noch?!
+<br> Hier finden Sie einen Überblick meiner beruflichen und persönlichen Interessen.
 
-<div class="content">
-    <p>
-        <button mat-raised-button color="primary" (click)="toggle(1)">
-            Framework Architekturen
-        </button>
-    </p>
-    <mat-card [@openClose]="isCollapsed1 ? 'open' : 'closed'" class="open-close-container">
-        <mat-card-title>Frameworks</mat-card-title>
-        <mat-card-content>Inhalt</mat-card-content>
+<div class="content" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="30px" fxLayoutAlign="flex-start">
+
+    <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
+        <mat-card-title>Software Entwicklung</mat-card-title>
+        <mat-card-content>
+            Die Software Entwicklung bietet ein sehr interessantes und umfangreiches Berufsfeld. So begeistert mich der gesamte Entwicklungsprozess von der Anforderungsanalyse, Projektplanung, Implementierung, Testing, bis hin zum Deployment der Release-Version.
+            Besonderes Interesse bereitet mir dabei die Spring Framework Architektur und die Java-Backend Entwicklung, insbesondere die ERM-Modulierung und Datenbank Anbindungen in Spring Boot und das Erstellen automatisierter Testverfahren.
+            <br>Bemerkenswert ist außerdem, dass sich <i>"state of
+                the art"</i> -Technologien je nach Anforderungen stetig ändern können, so lernt man permanent dazu und garantiert so einen abwechslungsreichen Berufsalltag, wie in kaum einer anderen Branche.
+            <br>
+            <br> Weitere Themengebiete die mich interessieren sind das Webdesign in Angular8 und Umsetzungen von IoT Projekten, bespielsweise mit MQTT.
+        </mat-card-content>
     </mat-card>
-    <p>
-        <button mat-raised-button color="primary" (click)="toggle(2)">
-            Software Entwicklung
-        </button>
-    </p>
-    <mat-card [@openClose]="isCollapsed2 ? 'open' : 'closed'" class="open-close-container">
-        <mat-card-title>Frameworks</mat-card-title>
-        <mat-card-content>Inhalt</mat-card-content>
+
+    <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
+        <mat-card-title>Webdesign</mat-card-title>
+        <mat-card-content>
+            Obwohl mein Hauptinteresse der Backend Entwicklung gilt, bin ich auch der Frontend Entwicklung zugeneigt. So arbeite ich mich gerade in die aktuelle Version 8 des Angular Frameworks ein. Bereits 2017 hab ich für das Startup Ad-Boxx eine SPA mit dem alten
+            AngularJS Framework entwickelt und so erste Erfahrungen in der Webentwicklung gesammelt. Im Frontend Bereich interessiert mich vor allem die Entwicklung kundenspezifischer Individual-Lösungen. Dazu nutze ich die umfangreichen - und mittlerweile
+            - browserübergreifend kompatiblen Angular Material Komponenten. Speziell für Ansprüche an ein responsive Webdesign verwende ich das neue <b>flexLayout API</b>, welches speziell für Angular entwickelt wurde.
+        </mat-card-content>
     </mat-card>
-    <p>
-        <button mat-raised-button color="primary" (click)="toggle(3)">
-            Persönliches
-        </button>
-    </p>
-    <mat-card [@openClose]="isCollapsed3 ? 'open' : 'closed'" class="open-close-container">
-        <mat-card-title>Frameworks</mat-card-title>
-        <mat-card-content>Inhalt</mat-card-content>
+
+    <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
+        <mat-card-title>Mathematik und Physik</mat-card-title>
+        <mat-card-content>
+            Mein Studium der Quantenphysik und Mathematik ist zwar bereits einige Jahre her, doch interessiere ich mich immer noch auf populärwissenschaftlicher Ebene für die aktuelle Forschung. So habe ich mit großem Interesse den Nobelpreis der Physik 2019 zur
+            Kenntnis genommen, da dieser im direkten Zusammenhang meines Studiums der
+            <i>allgemeinen Relativitätstheorie</i> und kosmologischen Modellen der Urknalltheorie steht.
+            <br> Außerdem werde ich durch meine Freunde, die mittlerweile ihre Postdoc Stellen in der Mathematik angetreten haben, auf dem Laufendem gehalten. So habe ich im vergangenen Jahr an einer Konferenz der Differentialgeometrie über <i>Gromov-hyperbolische Mannigfaltigkeiten</i>            in Münster teilgenommen.
+        </mat-card-content>
     </mat-card>
-    <p>
-        <button mat-raised-button color="primary" (click)="toggle(4)">
-            Physik und Mathematik
-        </button>
-    </p>
-    <mat-card [@openClose]="isCollapsed4 ? 'open' : 'closed'" class="open-close-container">
-        <mat-card-title>Frameworks</mat-card-title>
-        <mat-card-content>Inhalt</mat-card-content>
+
+    <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
+        <mat-card-title>Persönliches</mat-card-title>
+        <mat-card-content>
+            Wenn ich mich nicht mit Spring oder Angular Learning-Tutorials beschäftige oder populärwissenschaftliche Videos auf YouTube streame, dann mache ich für gewöhnlich Sport, z.B.:
+            <ul id="list-sport">
+                <li>Tischtennis</li>
+                <li>Fitness Studio</li>
+                <li>Joggen</li>
+            </ul>
+            Außerdem koche ich sehr gerne und probiere neue Rezepte aus. Ansonsten verfolge ich die Bundesliga und Champions-League oder treffe mich mit Freunden.
+        </mat-card-content>
     </mat-card>
+
 </div>
