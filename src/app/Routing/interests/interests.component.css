@@ -8,6 +8,17 @@
     margin-bottom: 15px;
 }
 
+.card-content {
+    width: 100%;
+    text-align: justify;
+}
+
 #list-sport {
     margin: 5px;
+}
+
+.content {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
 }

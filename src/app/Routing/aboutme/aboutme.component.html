@@ -1,53 +1,57 @@
-<p>aboutme works!</p>
-Persönliche Informationen Lebenslauf Hobbys? Github Account zu Beispiel repos. LinkedIn Email Foto?
+<div class="aboutMe-content">
 
-<h1 style="text-align: center;">BIETTE FOTO HIER BIIETE!</h1>
+    Persönliche Informationen Lebenslauf Hobbys? Github Account zu Beispiel repos. LinkedIn Email Foto?
 
-<div>
-    <h3 style="text-align: center;">Lebenslauf</h3>
-    Nach meinem Studium der theoretischen Kernphysik und Mathematik gilt mein Interesse nun der Software-Entwicklung. Bereits 2017 habe ich im Startup Ad-Box Erfahrungen als Web-Entwickler gesammelt. Damals habe ich im JavaScript basiertem AngularJS und NodeJS
-    Framework entwickelt, jedoch gelten diese in weiten Teilen als depricated und widme mich nun den "State-of-the-Arts" Technologien. So beschäftige ich mich seit ca. einem Jahr mit dem Java-basiertem Spring Framework und seit Kurzem auch mit dem Angular
-    Framework. Besonders die Framework Architekturen mich und besonders die Backend-Entwicklung in Spring begeistert mich.
+    <div>
+        <h3 style="text-align: center;">Kurzinfo</h3>
+
+        Ich bin 33 Jahre alt und lebe in Münster Nach meinem Studium der theoretischen Kernphysik und Mathematik gilt mein Interesse nun der Software-Entwicklung. Bereits 2017 habe ich im Startup Ad-Box Erfahrungen als Web-Entwickler gesammelt. Damals habe ich
+        im JavaScript basiertem AngularJS und NodeJS Framework entwickelt, jedoch gelten diese in weiten Teilen als depricated und widme mich nun den "State-of-the-Arts" Technologien. So beschäftige ich mich seit ca. einem Jahr mit dem Java-basiertem
+        Spring Framework und seit Kurzem auch mit dem Angular Framework. Besonders die Framework Architekturen mich und besonders die Backend-Entwicklung in Spring begeistert mich.
+    </div>
+
+    <mat-vertical-stepper>
+        <ng-template matStepperIcon="edit">
+            <mat-icon>stars</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="number" let-index="index">
+            {{index+1}}
+        </ng-template>
+        <mat-step label="2006 Abitur">
+            <p> Kopernikus Gymnasium Rheine </p>
+            <p> Leistungskurse Physik und Informatik</p>
+            <p> Abiturnote: 2,8</p>
+        </mat-step>
+        <mat-step label="Universität">
+            <p> Diplom Physik</p>
+            <p> Schwerpunkte: </p>
+            <ul>
+                <li>Standardmodell</li>
+                <li>Stringtheorie</li>
+                <li>Allgemeine Relativitätstheorie</li>
+                <li>Differential Geometrie</li>
+                <li>Quantenfeldtheorien</li>
+            </ul>
+            <p>Abschlussnote: 2,6</p>
+        </mat-step>
+        <mat-step label="Wissenschaftlicher Mitarbeiter">
+            <p>Datenanalyse</p>
+            <p>Grundlagenforschung</p>
+        </mat-step>
+        <mat-step label="Ad-Boxx Rheine">
+            <p>Web-Entwickler</p>
+            <ul>
+                <li>Webpräsenz</li>
+                <li>Werbeportal</li>
+                <li>Backend</li>
+            </ul>
+        </mat-step>
+        <mat-step label="Vorbereitung Referendariat">
+            <p>Studium der Didaktik</p>
+            <p>Erstellung eines Kolloquiums</p>
+        </mat-step>
+    </mat-vertical-stepper>
+    <div>
+        <p>Links:</p>
+    </div>
 </div>
-
-<mat-vertical-stepper>
-    <ng-template matStepperIcon="edit">
-        <mat-icon>stars</mat-icon>
-    </ng-template>
-    <ng-template matStepperIcon="number" let-index="index">
-        {{index+1}}
-    </ng-template>
-    <mat-step label="2006 Abitur">
-        <p> Kopernikus Gymnasium Rheine </p>
-        <p> Leistungskurse Physik und Informatik</p>
-        <p> Abiturnote: 2,8</p>
-    </mat-step>
-    <mat-step label="Universität">
-        <p> Diplom Physik</p>
-        <p> Schwerpunkte: </p>
-        <ul>
-            <li>Standardmodell</li>
-            <li>Stringtheorie</li>
-            <li>Allgemeine Relativitätstheorie</li>
-            <li>Differential Geometrie</li>
-            <li>Quantenfeldtheorien</li>
-        </ul>
-        <p>Abschlussnote: 2,6</p>
-    </mat-step>
-    <mat-step label="Wissenschaftlicher Mitarbeiter">
-        <p>Datenanalyse</p>
-        <p>Grundlagenforschung</p>
-    </mat-step>
-    <mat-step label="Ad-Boxx Rheine">
-        <p>Web-Entwickler</p>
-        <ul>
-            <li>Webpräsenz</li>
-            <li>Werbeportal</li>
-            <li>Backend</li>
-        </ul>
-    </mat-step>
-    <mat-step label="Vorbereitung Referendariat">
-        <p>Studium der Didaktik</p>
-        <p>Erstellung eines Kolloquiums</p>
-    </mat-step>
-</mat-vertical-stepper>
