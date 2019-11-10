@@ -15,14 +15,25 @@
             <mat-icon>stars</mat-icon>
         </ng-template>
         <ng-template matStepperIcon="number" let-index="index">
-            {{index+1}}
+            <mat-icon>donut_small</mat-icon>>
         </ng-template>
-        <mat-step label="Juli 2006 Abitur">
+        <ng-template matStepperIcon="done">
+            <mat-icon>donut_small</mat-icon>>
+        </ng-template>
+        <mat-step>
+            <ng-template matStepLabel>
+                <p class="headline">Abitur</p>
+                <p class="date">Juli 2006</p>
+            </ng-template>
             <p> Kopernikus Gymnasium Rheine </p>
             <p> Leistungskurse Informatik, Physik und Mathematik</p>
             <p> Abiturnote: 2,8</p>
         </mat-step>
-        <mat-step label="Septempber 2015 Diplom">
+        <mat-step>
+            <ng-template matStepLabel>
+                <p class="headline">Diplom</p>
+                <p class="date">Septempber 2015</p>
+            </ng-template>
             <p> Abschluss: Diplom Physik</p>
             <p>Abschlussnote: 2,6</p>
             <div>
@@ -44,11 +55,19 @@
                 </ul>
             </div>
         </mat-step>
-        <mat-step label="September 2016 Wissenschaftlicher Mitarbeiter">
+        <mat-step>
+            <ng-template matStepLabel>
+                <p class="headline">Wissenschaftlicher Mitarbeiter</p>
+                <p class="date">September 2016</p>
+            </ng-template>
             <p>Datenanalyse</p>
             <p>Grundlagenforschung</p>
         </mat-step>
-        <mat-step label="Oktober 2017 Ad-Boxx Rheine">
+        <mat-step>
+            <ng-template matStepLabel>
+                <p class="headline">Ad-Boxx Rheine</p>
+                <p class="date">Oktober 2017</p>
+            </ng-template>
             <p>Web-Entwickler</p>
             <ul>
                 <li>Webpräsenz</li>
@@ -56,7 +75,11 @@
                 <li>Backend</li>
             </ul>
         </mat-step>
-        <mat-step label="Juli 2018 Vorbereitung Referendariat">
+        <mat-step>
+            <ng-template matStepLabel>
+                <p class="headline">Vorbereitung Referendariat</p>
+                <p class="date">Juli 2018</p>
+            </ng-template>
             <p>Studium der Didaktik</p>
             <p>Erstellung eines Kolloquiums</p>
         </mat-step>
