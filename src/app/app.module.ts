@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTreeModule } from '@angular/material/tree';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     AboutsiteComponent
   ],
   imports: [
+    MatTreeModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
     MatProgressBarModule,
