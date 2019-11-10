@@ -11,18 +11,21 @@
 
     <mat-vertical-stepper>
         <ng-template matStepperIcon="edit">
-            <mat-icon>stars</mat-icon>
+            <mat-icon>donut_large</mat-icon>
         </ng-template>
         <ng-template matStepperIcon="number" let-index="index">
-            <mat-icon>donut_small</mat-icon>>
+            <mat-icon>donut_large</mat-icon>
         </ng-template>
         <ng-template matStepperIcon="done">
-            <mat-icon>donut_small</mat-icon>>
+            <mat-icon>stars</mat-icon>
         </ng-template>
         <mat-step>
             <ng-template matStepLabel>
                 <p class="headline">Abitur</p>
                 <p class="date">Juli 2006</p>
+            </ng-template>
+            <ng-template matStepperIcon="done">
+                <mat-icon>stars</mat-icon>
             </ng-template>
             <p> Kopernikus Gymnasium Rheine </p>
             <p> Leistungskurse Informatik, Physik und Mathematik</p>
@@ -32,6 +35,9 @@
             <ng-template matStepLabel>
                 <p class="headline">Diplom</p>
                 <p class="date">Septempber 2015</p>
+            </ng-template>
+            <ng-template matStepperIcon="done">
+                <mat-icon>stars</mat-icon>
             </ng-template>
             <p> Abschluss: Diplom Physik</p>
             <p>Abschlussnote: 2,6</p>
@@ -58,6 +64,9 @@
             <ng-template matStepLabel>
                 <p class="headline">Wissenschaftlicher Mitarbeiter</p>
                 <p class="date">September 2016</p>
+            </ng-template>
+            <ng-template matStepperIcon="done">
+                <mat-icon>stars</mat-icon>
             </ng-template>
             <p>Datenanalyse</p>
             <p>Grundlagenforschung</p>

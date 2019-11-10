@@ -8,9 +8,18 @@
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 960px) {
+.card-content {
+    text-align: left;
+    }
+}
+    @media screen and (min-width: 961px) {
+        .card-content {
+    text-align: justify;
+    }
+}
 .card-content {
     width: 100%;
-    text-align: justify;
 }
 
 #list-sport {
