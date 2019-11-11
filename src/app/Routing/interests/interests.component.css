@@ -9,15 +9,17 @@
 }
 
 @media screen and (max-width: 960px) {
-.card-content {
-    text-align: left;
+    .card-content {
+        text-align: left;
     }
 }
-    @media screen and (min-width: 961px) {
-        .card-content {
-    text-align: justify;
+
+@media screen and (min-width: 961px) {
+    .card-content {
+        text-align: justify;
     }
 }
+
 .card-content {
     width: 100%;
 }
@@ -27,6 +29,7 @@
 }
 
 .content {
+    margin-top: 30px;
     width: 80%;
     margin-right: 10%;
     margin-left: 10%;
