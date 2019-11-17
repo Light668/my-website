@@ -19,4 +19,11 @@ export class SkillsetComponent implements OnInit {
   ngOnInit() {
   }
 
+  valueCalc(value: number) {
+
+    let result: number;
+    result = (value * 100 / 9) - 10 * (10 / 9);
+    return result;
+  }
+
 }

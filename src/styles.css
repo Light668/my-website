@@ -9,3 +9,11 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.page {
+    margin-bottom: 30px;
+}
+
+.page-content {
+    min-height: 100%;
+}
