@@ -1,30 +1,36 @@
-<div class="aboutsite-content">
-    Meine persönliche Entwicklerseite soll zum einen auf mich aufmerksam machen, zum anderen dient Sie mir als
-    <i>Learning-Site</i> um neue Komponenten und Features aus dem Angular Framework zu testen. So wurden verschiedene Komponenten aus den Angular Materials genutzt und beispielsweise das moderne FlexLayout API für responsive Design verwendet.
+<div class="page-content" fxLayout="column" fxLayoutAlign="start space-between" fxLayoutGap="0px">
+    <div class="aboutsite-content" fxFlex>
+        Meine persönliche Entwicklerseite soll zum einen auf mich aufmerksam machen, zum anderen dient Sie mir als
+        <i>Learning-Site</i> um neue Komponenten und Features aus dem Angular Framework zu testen. So wurden verschiedene Komponenten aus den Angular Materials genutzt und beispielsweise das moderne FlexLayout API für responsive Design verwendet.
 
-    <div>
-        <h2 style="text-align: center;">Verwendete Technologien</h2>
-        <div fxLayout="row wrap" fxLayoutGap="30px" fxLayout.lt-md="column" fxLayoutAlign="start start">
-            <div fxFlex="0 1 calc(33.3% - 30px)" fxFlex.lt-md="100%" fxLayout="column" fxLayoutAlign="start center">
-                <h3>Angular 8 & Materials</h3>
-                <img class="tech-image" id="angular-imgage" src="assets/Angular.png">
-                <p>Diese Single Page Application (SPA) ist im modernen Angular 8 Framework entwickelt. Das Webdesign ist mit Angular Materials Komponenten umgesetzt.
-                </p>
-            </div>
+        <div>
+            <h2 style="text-align: center;">Verwendete Technologien</h2>
+            <div fxLayout="row wrap" fxLayoutGap="30px" fxLayout.lt-md="column" fxLayoutAlign="start start">
+                <div fxFlex="0 1 calc(33.3% - 30px)" fxFlex.lt-md="100%" fxLayout="column" fxLayoutAlign="start center">
+                    <h3>Angular 8 & Materials</h3>
+                    <img class="tech-image" id="angular-imgage" src="assets/Angular.png">
+                    <p>Diese Single Page Application (SPA) ist im modernen Angular 8 Framework entwickelt. Das Webdesign ist mit Angular Materials Komponenten umgesetzt.
+                    </p>
+                </div>
 
-            <div fxFlex="0 1 calc(33.3% - 30px)" fxFlex.lt-md="100%" fxLayout="column" fxLayoutAlign="start center">
-                <h3>TypeScript</h3>
-                <img class="tech-image" src="assets/ts.png">
-                <p>Das Angular Framework basiert auf der modernen TypeScript language und ermöglicht die objektorientierte Programmierung im Frontend. TS wird genutzt um die Funktionalität der Komponenten zu implementieren.
-                </p>
-            </div>
+                <div fxFlex="0 1 calc(33.3% - 30px)" fxFlex.lt-md="100%" fxLayout="column" fxLayoutAlign="start center">
+                    <h3>TypeScript</h3>
+                    <img class="tech-image" src="assets/ts.png">
+                    <p>Das Angular Framework basiert auf der modernen TypeScript language und ermöglicht die objektorientierte Programmierung im Frontend. TS wird genutzt um die Funktionalität der Komponenten zu implementieren.
+                    </p>
+                </div>
 
-            <div fxFlex="0 1 calc(33.3% - 30px)" fxFlex.lt-md="100%" fxLayout="column" fxLayoutAlign="start center">
-                <h3>SCSS und Sass</h3>
-                <img class="tech-image" src="assets/Sass.png">
-                <p>SCSS dient als CSS-Präprozessor und vereinfacht die Nutzung, z.B. durch den Einsatz von Variablen und Schleifen. Außerdem verwendet FlexLayout Sass mixins um somit die Kompatibilität unterschiedlicher Browser zu garantieren.
-                </p>
+                <div fxFlex="0 1 calc(33.3% - 30px)" fxFlex.lt-md="100%" fxLayout="column" fxLayoutAlign="start center">
+                    <h3>SCSS und Sass</h3>
+                    <img class="tech-image" src="assets/Sass.png">
+                    <p>SCSS dient als CSS-Präprozessor und vereinfacht die Nutzung, z.B. durch den Einsatz von Variablen und Schleifen. Außerdem verwendet FlexLayout Sass mixins um somit die Kompatibilität unterschiedlicher Browser zu garantieren.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <app-footer></app-footer>
+    <div fxFlex>
+
+    </div>
+    <app-footer fxFlex="30px" fxFlexFill></app-footer>
+</div>

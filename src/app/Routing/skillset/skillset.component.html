@@ -1,5 +1,5 @@
-<div class="page-content">
-    <div class="skillset-content">
+<div class="page-content" fxLayout="column" fxLayoutAlign="start space-between" fxLayoutGap="0px">
+    <div class="skillset-content" fxFlex>
         <h3 style="margin-top: 0; padding-top: 23px; text-align: center;">Skillsheet</h3>
         Hier finden Sie einen Überblick meiner IT-Skills nach Selbsteinschätzung.
         <br>
@@ -18,7 +18,6 @@
             </div>
             <mat-accordion multi="false">
                 <mat-expansion-panel>
-
                     <mat-expansion-panel-header>
                         <p class="bar-label ">Spring</p>
                         <mat-progress-bar mode="determinate " [value]="valueCalc(5)" aria-labelledby="Spring " aria-label="text ">
@@ -90,5 +89,7 @@
             </ul>
         </mat-card>
     </div>
-    <app-footer></app-footer>
+    <div fxFlex>
+    </div>
+    <app-footer fxFlex="30px" fxFlexFill></app-footer>
 </div>

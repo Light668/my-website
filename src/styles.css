@@ -10,10 +10,6 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.page {
-    margin-bottom: 30px;
-}
-
 .page-content {
-    min-height: 100%;
+    height: 100%;
 }

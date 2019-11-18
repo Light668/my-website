@@ -1,124 +1,127 @@
-<div class="aboutMe-content page">
+<div class="page-content" fxLayout="column" fxLayoutAlign="start space-between" fxLayoutGap="0px">
+    <div class="aboutMe-content" fxFlex>
+        <div>
+            <h3 style="text-align: center;">Kurzinfo</h3>
+            Ich bin Timo Radtke, 33 Jahre alt und lebe in Münster. Nach meinem Studium der mathematischen Physik und anschließender Zeit als Wissenschaftler an der WWU Münster habe ich zunächst als Web Entwickler für das Startup
+            <i>Ad-Boxx</i> in Rheine gearbeitet. Anschließend war es mein Wunsch Lehrer zu werden, konnte jedoch mein Referendariat nicht aufnehmen. Daher suche ich zur Zeit eine Beschäftigung als Java-Software Entwickler im Raum Münster.
+        </div>
 
-    <div>
-        <h3 style="text-align: center;">Kurzinfo</h3>
-        Ich bin Timo Radtke, 33 Jahre alt und lebe in Münster. Nach meinem Studium der mathematischen Physik und anschließender Zeit als Wissenschaftler an der WWU Münster habe ich zunächst als Web Entwickler für das Startup
-        <i>Ad-Boxx</i> in Rheine gearbeitet. Anschließend war es mein Wunsch Lehrer zu werden, konnte jedoch mein Referendariat nicht aufnehmen. Daher suche ich zur Zeit eine Beschäftigung als Java-Software Entwickler im Raum Münster.
-    </div>
+        <div class="headline-stepper">
+            <h3 style="text-align: center;">Interaktiver Lebenslauf</h3>
+            Hier eine kurze Übersicht meiner bisherigen Stationen. Für eine detailierte Darstellung bitte einfach den Stepper nutzen.
+        </div>
 
-    <div class="headline-stepper">
-        <h3 style="text-align: center;">Interaktiver Lebenslauf</h3>
-        Hier eine kurze Übersicht meiner bisherigen Stationen. Für eine detailierte Darstellung bitte einfach den Stepper nutzen.
-    </div>
-
-    <mat-vertical-stepper>
-        <ng-template matStepperIcon="edit">
-            <mat-icon>donut_large</mat-icon>
-        </ng-template>
-        <ng-template matStepperIcon="number" let-index="index">
-            <mat-icon>donut_large</mat-icon>
-        </ng-template>
-        <ng-template matStepperIcon="done">
-            <mat-icon>stars</mat-icon>
-        </ng-template>
-        <mat-step>
-            <ng-template matStepLabel>
-                <p class="headline">Abitur</p>
-                <p class="date">Juli 2006</p>
-                <p class="location">Kopernikus Gymnasium Rheine</p>
+        <mat-vertical-stepper id="stepper">
+            <ng-template matStepperIcon="edit">
+                <mat-icon>donut_large</mat-icon>
+            </ng-template>
+            <ng-template matStepperIcon="number" let-index="index">
+                <mat-icon>donut_large</mat-icon>
             </ng-template>
             <ng-template matStepperIcon="done">
                 <mat-icon>stars</mat-icon>
             </ng-template>
-            <p> Leistungskurse Informatik, Physik und Mathematik</p>
-            <p>Teilnahme an Wettbewerben</p>
-            <ul>
-                <li>Mathematik Olympiade</li>
-                <li>Bundeswettbewerb Mathematik</li>
-                <li>Bundeswettbewerb Informatik</li>
-            </ul>
-            <p> Abiturnote: 2,8</p>
-        </mat-step>
-        <mat-step>
-            <ng-template matStepLabel>
-                <p class="headline">Diplom</p>
-                <p class="date">Oktober 2006 - Septempber 2015</p>
-                <p class="location">WWU Münster</p>
-            </ng-template>
-            <ng-template matStepperIcon="done">
-                <mat-icon>stars</mat-icon>
-            </ng-template>
-            <p>Abschluss: Diplom Physik</p>
-            <p>Abschlussnote: 2,6</p>
-            <div>
-                <p>Schwerpunkte Physik </p>
+            <mat-step>
+                <ng-template matStepLabel>
+                    <p class="headline">Abitur</p>
+                    <p class="date">Juli 2006</p>
+                    <p class="location">Kopernikus Gymnasium Rheine</p>
+                </ng-template>
+                <ng-template matStepperIcon="done">
+                    <mat-icon>stars</mat-icon>
+                </ng-template>
+                <p> Leistungskurse Informatik, Physik und Mathematik</p>
+                <p>Teilnahme an Wettbewerben</p>
                 <ul>
-                    <li>Allgemeine Relativitätstheorie</li>
-                    <li>Quantenfeldtheorien</li>
-                    <li>Standardmodell der Kernphysik</li>
-                    <li>Quantenchromodynamik</li>
+                    <li>Mathematik Olympiade</li>
+                    <li>Bundeswettbewerb Mathematik</li>
+                    <li>Bundeswettbewerb Informatik</li>
                 </ul>
-            </div>
-            <div>
-                <p> Schwerpunkte Mathematik</p>
-                <ul>
-                    <li>Differential Geometrie</li>
-                    <li>Topologie</li>
-                    <li>Eichfeldtheorien</li>
-                    <li>Kähler-Mannigfaltigkeiten</li>
-                    <li>Stringtheorie</li>
-                </ul>
-            </div>
-            <div>
+                <p> Abiturnote: 2,8</p>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>
+                    <p class="headline">Diplom</p>
+                    <p class="date">Oktober 2006 - Septempber 2015</p>
+                    <p class="location">WWU Münster</p>
+                </ng-template>
+                <ng-template matStepperIcon="done">
+                    <mat-icon>stars</mat-icon>
+                </ng-template>
+                <p>Abschluss: Diplom Physik</p>
+                <p>Abschlussnote: 2,6</p>
+                <div>
+                    <p>Schwerpunkte Physik </p>
+                    <ul>
+                        <li>Allgemeine Relativitätstheorie</li>
+                        <li>Quantenfeldtheorien</li>
+                        <li>Standardmodell der Kernphysik</li>
+                        <li>Quantenchromodynamik</li>
+                    </ul>
+                </div>
+                <div>
+                    <p> Schwerpunkte Mathematik</p>
+                    <ul>
+                        <li>Differential Geometrie</li>
+                        <li>Topologie</li>
+                        <li>Eichfeldtheorien</li>
+                        <li>Kähler-Mannigfaltigkeiten</li>
+                        <li>Stringtheorie</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Tutor Physik I & II</p>
+                    <ul>
+                        <li>Betreuung von ca. 20 Studenten</li>
+                        <li>Wöchentliche Korrektur und Besprechung der Übungsaufgaben</li>
+                        <li>Klausuraufsicht</li>
+                    </ul>
+                </div>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>
+                    <p class="headline">Wissenschaftlicher Mitarbeiter</p>
+                    <p class="date">Oktober 2015 - September 2016</p>
+                    <p class="location">Institut für theoretische Physik Münster</p>
+                </ng-template>
+                <ng-template matStepperIcon="done">
+                    <mat-icon>stars</mat-icon>
+                </ng-template>
+                <p>Datenanalyse von experimentellen Metadaten</p>
+                <p>Grundlagenforschung auf Basis meiner Diplomarbeit</p>
                 <p>Tutor Physik I & II</p>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>
+                    <p class="headline">Web Entwickler</p>
+                    <p class="date">April 2017 - Oktober 2017</p>
+                    <p class="location">Ad-Boxx Rheine</p>
+                </ng-template>
+                <p>Web Entwickler</p>
                 <ul>
-                    <li>Betreuung von ca. 20 Studenten</li>
-                    <li>Wöchentliche Korrektur und Besprechung der Übungsaufgaben</li>
-                    <li>Klausuraufsicht</li>
+                    <li>Webpräsenz in Form einer SPA in AngularJS</li>
+                    <li>E-Commerce im Form eines Werbeportals</li>
+                    <li>Backend in Node.js</li>
+                    <li>Deployment und IT-Administration</li>
                 </ul>
-            </div>
-        </mat-step>
-        <mat-step>
-            <ng-template matStepLabel>
-                <p class="headline">Wissenschaftlicher Mitarbeiter</p>
-                <p class="date">Oktober 2015 - September 2016</p>
-                <p class="location">Institut für theoretische Physik Münster</p>
-            </ng-template>
-            <ng-template matStepperIcon="done">
-                <mat-icon>stars</mat-icon>
-            </ng-template>
-            <p>Datenanalyse von experimentellen Metadaten</p>
-            <p>Grundlagenforschung auf Basis meiner Diplomarbeit</p>
-            <p>Tutor Physik I & II</p>
-        </mat-step>
-        <mat-step>
-            <ng-template matStepLabel>
-                <p class="headline">Web Entwickler</p>
-                <p class="date">April 2017 - Oktober 2017</p>
-                <p class="location">Ad-Boxx Rheine</p>
-            </ng-template>
-            <p>Web Entwickler</p>
-            <ul>
-                <li>Webpräsenz in Form einer SPA in AngularJS</li>
-                <li>E-Commerce im Form eines Werbeportals</li>
-                <li>Backend in Node.js</li>
-                <li>Deployment und IT-Administration</li>
-            </ul>
-            <p>Organisation</p>
-            <ul>
-                <li>Beratung der Geschäftsführung</li>
-            </ul>
-        </mat-step>
-        <mat-step>
-            <ng-template matStepLabel>
-                <p class="headline">Vorbereitung Referendariat</p>
-                <p class="date">Januar 2018 - Juli 2018</p>
-                <p class="location">WWU Münster</p>
-            </ng-template>
-            <p>Studium der Didaktik als Gasthörer</p>
-            <p>Erstellung eines Kolloquiums</p>
-            <p>Unterichtsvorbereitung</p>
-        </mat-step>
-    </mat-vertical-stepper>
+                <p>Organisation</p>
+                <ul>
+                    <li>Beratung der Geschäftsführung</li>
+                </ul>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>
+                    <p class="headline">Vorbereitung Referendariat</p>
+                    <p class="date">Januar 2018 - Juli 2018</p>
+                    <p class="location">WWU Münster</p>
+                </ng-template>
+                <p>Studium der Didaktik als Gasthörer</p>
+                <p>Erstellung eines Kolloquiums</p>
+                <p>Unterichtsvorbereitung</p>
+            </mat-step>
+        </mat-vertical-stepper>
+    </div>
+    <div fxFlex>
+    </div>
+    <app-footer fxFlex="30px" fxFlexFill></app-footer>
 </div>
-<app-footer></app-footer>
