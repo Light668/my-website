@@ -1,4 +1,4 @@
-<div class="page-content" fxLayout="column" fxLayoutAlign="start space-between" fxLayoutGap="0px">
+<div class="page-content" fxLayout="column" fxLayoutAlign="space-between start" fxLayoutGap="0px">
     <div class="aboutMe-content" fxFlex>
         <div>
             <h3 style="text-align: center;">Kurzinfo</h3>
@@ -10,7 +10,6 @@
             <h3 style="text-align: center;">Interaktiver Lebenslauf</h3>
             Hier eine kurze Übersicht meiner bisherigen Stationen. Für eine detailierte Darstellung bitte einfach den Stepper nutzen.
         </div>
-
         <mat-vertical-stepper id="stepper">
             <ng-template matStepperIcon="edit">
                 <mat-icon>donut_large</mat-icon>
@@ -37,7 +36,6 @@
                     <li>Bundeswettbewerb Mathematik</li>
                     <li>Bundeswettbewerb Informatik</li>
                 </ul>
-                <p> Abiturnote: 2,8</p>
             </mat-step>
             <mat-step>
                 <ng-template matStepLabel>
@@ -49,7 +47,6 @@
                     <mat-icon>stars</mat-icon>
                 </ng-template>
                 <p>Abschluss: Diplom Physik</p>
-                <p>Abschlussnote: 2,6</p>
                 <div>
                     <p>Schwerpunkte Physik </p>
                     <ul>
@@ -123,5 +120,5 @@
     </div>
     <div fxFlex>
     </div>
-    <app-footer fxFlex="30px" fxFlexFill></app-footer>
+    <app-footer fxFlex fxFlexFill></app-footer>
 </div>

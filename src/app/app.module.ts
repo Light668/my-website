@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTreeModule } from '@angular/material/tree';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './Routing/home/home.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
     InterestsComponent,
     SkillsetComponent,
     AboutsiteComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     MatTreeModule,
