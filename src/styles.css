@@ -13,3 +13,7 @@ body {
 .page-content {
     height: 100%;
 }
+
+.footer-container {
+    background-color: #3f51b5;
+}
