@@ -38,3 +38,8 @@ mat-progress-bar {
 #skillset-legend {
     font-size: 13px;
 }
+
+.mat-card {
+    box-shadow: none;
+    background: none;
+}

@@ -6,9 +6,6 @@
         <br>
         <span id="skillset-legend"><u>Zur Legende</u>: 1 = Beginner Level, 10 = Expert Level</span>
         <mat-card>
-            <mat-card-title class="skillsheet-title">
-                IT-Skillsheet
-            </mat-card-title>
             <div class="skill-legend" fxLayout="row" fxLayoutAlign="space-between center">
                 <ng-container *ngFor="let idx of [1,2,3,4,5,6,7,8,9,10]">
                     <span class="item" *ngIf="media.isActive('gt-xs')">{{idx}}</span>
@@ -20,60 +17,74 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <p class="bar-label ">Spring</p>
-                        <mat-progress-bar mode="determinate " [value]="valueCalc(5)" aria-labelledby="Spring " aria-label="text ">
+                        <mat-progress-bar mode="determinate " [value]="valueCalc(5)" aria-labelledby="Spring "
+                            aria-label="text ">
                         </mat-progress-bar>
                     </mat-expansion-panel-header>
 
                     <p class="bar-label ">Spring MVC</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(7)" aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(7)"
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
 
                     <p class="bar-label ">JPA / Jdbc</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(6)" aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(6)"
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
 
                     <p class="bar-label ">Spring Security</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4)" aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4)"
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
 
                     <p class="bar-label ">Testing / Mockito</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5)" aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5)"
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                 </mat-expansion-panel>
 
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <p class="bar-label ">Frontend</p>
-                        <mat-progress-bar mode="determinate " [value]="valueCalc(3.5)" aria-labelledby="Spring " aria-label="text ">
+                        <mat-progress-bar mode="determinate " [value]="valueCalc(3.5)" aria-labelledby="Spring "
+                            aria-label="text ">
                         </mat-progress-bar>
                     </mat-expansion-panel-header>
                     <p class="bar-label ">Angular</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(3) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(3) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                     <p class="bar-label ">HTML 5</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                     <p class="bar-label ">CSS 3</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                 </mat-expansion-panel>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <p class="bar-label ">Programmiersprachen</p>
-                        <mat-progress-bar mode="determinate " [value]="valueCalc(6)" aria-labelledby="Spring " aria-label="text ">
+                        <mat-progress-bar mode="determinate " [value]="valueCalc(6)" aria-labelledby="Spring "
+                            aria-label="text ">
                         </mat-progress-bar>
                     </mat-expansion-panel-header>
                     <p class="bar-label ">Java</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(7) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(7) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                     <p class="bar-label ">JavaScript</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(6) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(6) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                     <p class="bar-label ">TypeScript</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                     <p class="bar-label ">SQL</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) " aria-labelledby="Spring " aria-label="text ">
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) "
+                        aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                 </mat-expansion-panel>
             </mat-accordion>
