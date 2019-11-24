@@ -1,0 +1,45 @@
+mat-progress-bar {
+    height: 20px;
+}
+
+.bar-label {
+    z-index: 1000;
+    position: absolute;
+    color: #fff;
+    margin-left: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-bar {
+    height: 60px;
+}
+
+.sub-bar {
+    margin-bottom: 20px;
+}
+
+.skillsheet-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.skill-legend {
+    /* padding-left: 25px; */
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.skillset-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#skillset-legend {
+    font-size: 13px;
+}
+
+.mat-card {
+    box-shadow: none;
+    background: none;
+}

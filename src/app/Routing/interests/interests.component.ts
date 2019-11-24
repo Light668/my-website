@@ -28,35 +28,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./interests.component.css'],
 })
 export class InterestsComponent implements OnInit {
-  isOpen = true;
-  public isCollapsed1: boolean;
-  public isCollapsed2: boolean;
-  public isCollapsed3: boolean;
-  public isCollapsed4: boolean;
+
   constructor() {
-    this.isCollapsed1 = false;
-    this.isCollapsed2 = false;
-    this.isCollapsed3 = false;
-    this.isCollapsed4 = false;
   }
 
   ngOnInit() {
   }
 
-  toggle(index: number) {
-    switch (index) {
-      case 1:
-        this.isCollapsed1 = !this.isCollapsed1;
-        break;
-      case 2:
-        this.isCollapsed2 = !this.isCollapsed2;
-        break;
-      case 3:
-        this.isCollapsed3 = !this.isCollapsed3;
-        break;
-      case 4:
-        this.isCollapsed4 = !this.isCollapsed4;
-        break;
-    }
-  }
 }

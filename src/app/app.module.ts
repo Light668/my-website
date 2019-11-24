@@ -15,6 +15,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTreeModule } from '@angular/material/tree';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './Routing/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +29,15 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     InterestsComponent,
     SkillsetComponent,
-    AboutsiteComponent
+    AboutsiteComponent,
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
+    MatTreeModule,
+    MatExpansionModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
     MatCardModule,
     MatStepperModule,
     MatIconModule,
