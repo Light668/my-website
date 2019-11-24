@@ -111,7 +111,11 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/expansion
+
 @angular/material/icon
+
+@angular/material/progress-bar
 
 @angular/material/sidenav
 
