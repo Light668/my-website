@@ -10,7 +10,7 @@
             <h3 style="text-align: center;">Interaktiver Lebenslauf</h3>
             Hier eine kurze Übersicht meiner bisherigen Stationen. Für eine detailierte Darstellung bitte einfach den Stepper nutzen.
         </div>
-        <mat-vertical-stepper id="stepper" (selectionChange)="animationEnded($event)" [selectedIndex]="selectedStep">
+        <mat-vertical-stepper id="stepper" (selectionChange)="animationEnded($event)">
             <ng-template matStepperIcon="edit">
                 <mat-icon>donut_large</mat-icon>
             </ng-template>

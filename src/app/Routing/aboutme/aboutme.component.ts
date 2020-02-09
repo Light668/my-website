@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutmeComponent implements OnInit {
 
-  private selectedStep: number = 0;
-
   constructor() { }
 
   ngOnInit() {
@@ -18,12 +16,7 @@ export class AboutmeComponent implements OnInit {
   animationEnded(event) {
 
     let id: string = "cdk-step-label-0-" + event.selectedIndex;
-    console.log(event);
-    console.log(id);
     let element = document.getElementById(id);
-    console.log(element);
     setTimeout(() => { element.scrollIntoView(); }, 200);
-    let ypos = element.clientHeight;
-    console.log(ypos);
   }
 }
