@@ -1,9 +1,6 @@
 .footer {
-    flex-grow: 0;
-    flex-shrink: 0;
     color: #fff;
-    background-color: #3f51b5;
-    flex: 100%;
+    background-color: #3f51b5;   
 }
 
 .linkedIn-logo {

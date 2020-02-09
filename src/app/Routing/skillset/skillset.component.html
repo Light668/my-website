@@ -16,18 +16,18 @@
             <mat-accordion multi="false">
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
-                        <p class="bar-label ">Spring</p>
+                        <p class="bar-label ">Spring Boot und Backend</p>
                         <mat-progress-bar mode="determinate " [value]="valueCalc(5)" aria-labelledby="Spring "
                             aria-label="text ">
                         </mat-progress-bar>
                     </mat-expansion-panel-header>
 
                     <p class="bar-label ">Spring MVC</p>
-                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(7)"
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(6)"
                         aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
 
-                    <p class="bar-label ">JPA / Jdbc</p>
+                    <p class="bar-label ">JPA / Hibernate</p>
                     <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(6)"
                         aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
@@ -37,7 +37,7 @@
                         aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
 
-                    <p class="bar-label ">Testing / Mockito</p>
+                    <p class="bar-label ">Testing: JUnit / Mockito</p>
                     <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5)"
                         aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
@@ -46,7 +46,7 @@
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <p class="bar-label ">Frontend</p>
-                        <mat-progress-bar mode="determinate " [value]="valueCalc(3.5)" aria-labelledby="Spring "
+                        <mat-progress-bar mode="determinate " [value]="valueCalc(4)" aria-labelledby="Spring "
                             aria-label="text ">
                         </mat-progress-bar>
                     </mat-expansion-panel-header>
@@ -62,7 +62,11 @@
                     <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4) "
                         aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
-                </mat-expansion-panel>
+                    <p class="bar-label ">Bootstrap</p>
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(5) "
+                    aria-labelledby="Spring " aria-label="text ">
+                </mat-progress-bar>
+            </mat-expansion-panel>
                 <mat-expansion-panel>
                     <mat-expansion-panel-header>
                         <p class="bar-label ">Programmiersprachen</p>
@@ -87,6 +91,30 @@
                         aria-labelledby="Spring " aria-label="text ">
                     </mat-progress-bar>
                 </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <p class="bar-label ">Dev Ops und Agilität</p>
+                        <mat-progress-bar mode="determinate " [value]="valueCalc(3)" aria-labelledby="Spring "
+                            aria-label="text ">
+                        </mat-progress-bar>
+                    </mat-expansion-panel-header>
+                    <p class="bar-label ">Docker</p>
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(3) "
+                        aria-labelledby="Spring " aria-label="text ">
+                    </mat-progress-bar>
+                    <p class="bar-label ">Continous Integration</p>
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4) "
+                        aria-labelledby="Spring " aria-label="text ">
+                    </mat-progress-bar>
+                    <p class="bar-label ">Scrum</p>
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(2) "
+                        aria-labelledby="Spring " aria-label="text ">
+                    </mat-progress-bar>
+                    <p class="bar-label ">UML Modellierung</p>
+                    <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(3.5) "
+                        aria-labelledby="Spring " aria-label="text ">
+                    </mat-progress-bar>
+                </mat-expansion-panel>
             </mat-accordion>
             <p>
                 <b><u>Weitere IT-Fähigkeiten:</u></b>
@@ -94,7 +122,6 @@
             <ul>
                 <li>Git Workflow</li>
                 <li>Dependency Injection via Maven</li>
-                <li>Grundkenntnisse Scrum</li>
                 <li>Office Anwendungen</li>
                 <li>R</li>
             </ul>
@@ -102,5 +129,5 @@
     </div>
     <div fxFlex>
     </div>
-    <app-footer fxFlex fxFlexFill class="footer-container"></app-footer>
+    <app-footer fxFlex="1 1 144px" class="footer-container"></app-footer>
 </div>

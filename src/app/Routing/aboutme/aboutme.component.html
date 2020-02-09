@@ -1,5 +1,5 @@
 <div class="page-content" fxLayout="column" fxLayoutAlign="start space-between" fxLayoutGap="0px">
-    <div class="aboutMe-content" fxFlex>
+    <div class="aboutMe-content" fxFlex="1 1 auto">
         <div>
             <h3 style="text-align: center;">Kurzinfo</h3>
             Ich bin Timo Radtke, 33 Jahre alt und lebe in Münster. Nach meinem Studium der mathematischen Physik und anschließender Zeit als Wissenschaftler an der WWU Münster habe ich zunächst als Web Entwickler für das Startup
@@ -10,7 +10,7 @@
             <h3 style="text-align: center;">Interaktiver Lebenslauf</h3>
             Hier eine kurze Übersicht meiner bisherigen Stationen. Für eine detailierte Darstellung bitte einfach den Stepper nutzen.
         </div>
-        <mat-vertical-stepper id="stepper">
+        <mat-vertical-stepper id="stepper" (selectionChange)="animationEnded($event)" [selectedIndex]="selectedStep">
             <ng-template matStepperIcon="edit">
                 <mat-icon>donut_large</mat-icon>
             </ng-template>
@@ -37,7 +37,7 @@
                     <li>Bundeswettbewerb Informatik</li>
                 </ul>
             </mat-step>
-            <mat-step>
+            <mat-step >
                 <ng-template matStepLabel>
                     <p class="headline">Diplom</p>
                     <p class="date">Oktober 2006 - Septempber 2015</p>
@@ -118,7 +118,7 @@
             </mat-step>
         </mat-vertical-stepper>
     </div>
-    <div fxFlex>
-    </div>
-    <app-footer fxFlex fxFlexFill class="footer-container"></app-footer>
+    <!-- <div fxFlex>
+    </div> -->
+    <app-footer fxFlex="1 1 150px" class="footer-container"></app-footer>
 </div>
