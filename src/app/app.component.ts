@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +14,7 @@ export class AppComponent {
   }
 
   public navToRoute(s: string) {
+    console.log('navigate to route: ', s);
     this.router.navigateByUrl(s);
     this.opened = false;
   }

@@ -1,28 +1,42 @@
 mat-sidenav {
-    max-width: 280px;
-    width: 70%;
+  max-width: 280px;
+  width: 70%;
 }
 
 .sidenav-content {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .toolbar {
-    position: relative;
-    z-index: 1;
-    flex-grow: 0;
-    flex-shrink: 0;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.38);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.38);
+  position: relative;
+  z-index: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.38);
 }
 
 .content {
-    flex-grow: 1;
-    flex-shrink: 1;
-    overflow: auto;
-    height: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  height: 100%;
 }
+
+.home-button {
+  cursor: pointer;
+}
+
+.active-link {
+  background-color: #ffffff !IMPORTANT;
+  color: #3f51b5 !IMPORTANT;
+}
+
+.nav-routes > a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+

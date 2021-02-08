@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {fadeInOut} from '../../animations/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [fadeInOut],
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public isFaded = false;
 
-  ngOnInit() {
+  constructor() {
   }
 
+  ngOnInit() {
+    setTimeout(() => {
+      this.isFaded = true;
+    }, 10);
+  }
 }
