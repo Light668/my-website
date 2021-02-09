@@ -15,7 +15,7 @@ export class AboutmeComponent implements OnInit {
 
   animationEnded(event) {
 
-    let id: string = "cdk-step-label-0-" + event.selectedIndex;
+    let id: string = 'cdk-step-label-0-' + event.selectedIndex;
     let element = document.getElementById(id);
     setTimeout(() => { element.scrollIntoView(); }, 200);
   }
