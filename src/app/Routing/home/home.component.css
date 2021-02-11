@@ -1,7 +1,7 @@
 .home-content {
-    margin-top: 20px;
-    margin-right: 10%;
-    margin-left: 10%;
+  margin-top: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 #welcome-msg {
@@ -12,4 +12,26 @@
   color: #000000;
   /* font-size: 18px; */
   margin-bottom: 15px;
+}
+
+.welcome-card:hover {
+  cursor: pointer;
+}
+
+.welcome-card:hover > img {
+  opacity: 0.3;
+}
+
+.welcome-card:hover > span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.5);
+  padding: 30px;
+}
+
+.welcome-card > span {
+  display: none;
 }
