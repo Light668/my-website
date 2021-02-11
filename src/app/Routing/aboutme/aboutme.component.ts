@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-aboutme',
@@ -7,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutmeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
 
   }
 
   animationEnded(event) {
-
-    let id: string = 'cdk-step-label-0-' + event.selectedIndex;
-    let element = document.getElementById(id);
-    setTimeout(() => { element.scrollIntoView(); }, 200);
+    const id: string = 'cdk-step-label-' + event.selectedStep._stepper._groupId + '-' + event.selectedIndex;
+    const element = document.getElementById(id);
+    setTimeout(() => {
+      element.scrollIntoView();
+    }, 200);
   }
 }

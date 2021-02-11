@@ -2,6 +2,7 @@
   <mat-sidenav-container fxFlexFill class="example-container">
     <mat-sidenav #sidenav fxLayout="column" [(opened)]="opened">
       <div fxLayout="column">
+        <a (click)="navToRoute('/home')" mat-button>Startseite</a>
         <a (click)="navToRoute('/skillset')" mat-button>Fähigkeiten</a>
         <a (click)="navToRoute('/interests')" mat-button>Interessen</a>
         <a (click)="navToRoute('/aboutme')" mat-button>Über Mich</a>
