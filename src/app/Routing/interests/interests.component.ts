@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import {Component, OnInit} from '@angular/core';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+import {ScrolledView, ViewServiceService} from '../../service/view-service.service';
 
 
 @Component({
@@ -29,10 +30,19 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class InterestsComponent implements OnInit {
 
-  constructor() {
+  constructor(private scrollViewService: ViewServiceService) {
   }
 
   ngOnInit() {
+    this.scrollViewService.scrolledView$.subscribe((sV: ScrolledView) => {
+      if (sV !== undefined &&
+        sV === ScrolledView.SOFTWARE_DEV) {
+        const id = 'software-dev';
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          element.scrollIntoView();
+        }, 200);
+      }
+    });
   }
-
 }
