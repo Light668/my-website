@@ -1,40 +1,52 @@
 .footer {
-    color: #fff;
-    background-color: #3f51b5;   
+  color: #fff;
+  background-color: #3f51b5;
 }
 
 .linkedIn-logo {
-    height: 32px;
-    width: auto;
-    background-color: #fff;
+  height: 32px;
+  width: auto;
+  background-color: #fff;
 }
 
 .email-logo {
-    height: 32px;
-    width: auto;
-    color: #fff;
-    margin-top: 8px;
+  height: 32px;
+  width: auto;
+  color: #fff;
+  margin-top: 8px;
 }
 
 #description-email {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 #description {
-    padding-top: 8px;
+  padding-top: 8px;
 }
 
 .github-logo {
-    height: 32px;
-    width: auto;
-    padding-bottom: 8px;
+  height: 32px;
+  width: auto;
+  padding-bottom: 8px;
 }
 
 .contact-info {
-    width: 100%;
+  width: 100%;
 }
 
 #email-info {
-    margin-left: 15px;
-    vertical-align: super;
+  margin-left: 15px;
+  vertical-align: super;
+  padding-top: 12px;
+}
+
+#linkedin-info {
+  margin-left: 15px;
+  vertical-align: super;
+}
+
+#github-info {
+  margin-left: 15px;
+  vertical-align: super;
+  padding-top: 7px;
 }

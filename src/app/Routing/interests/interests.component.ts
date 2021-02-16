@@ -43,6 +43,13 @@ export class InterestsComponent implements OnInit {
           element.scrollIntoView();
         }, 200);
       }
+      if (sV !== undefined && sV === ScrolledView.MYPERSON) {
+        const id = 'personal';
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          element.scrollIntoView();
+        }, 200);
+      }
     });
   }
 }

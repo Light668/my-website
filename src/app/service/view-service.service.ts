@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 
 @Injectable({
@@ -7,9 +7,14 @@ import {BehaviorSubject} from 'rxjs';
 export class ViewServiceService {
 
   public scrolledView$: BehaviorSubject<ScrolledView> = new BehaviorSubject(undefined);
-  constructor() { }
+
+  constructor() {
+  }
 }
 
 export enum ScrolledView {
-  SOFTWARE_DEV
+  SOFTWARE_DEV,
+  SKILLSHEET = 1,
+  INTERACTIVECV = 2,
+  MYPERSON
 }

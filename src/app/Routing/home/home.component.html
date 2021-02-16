@@ -4,37 +4,59 @@
       Willkommen auf meiner persönlichen Entwicklerseite!
     </h2>
     <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="30px" fxLayoutAlign="flex-start">
-      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
-                (mouseenter)="shift(false)"
-                (mouseleave)="shift(true)"
-                (click)="navToRoute('/interests')">
-        <mat-card-title [@shiftIn]="{ value: isShifted ===true ? 'shift_in' : 'shift_out', params:{signShift: '-100'}}">
+      <mat-card class="item-card welcome-card" id="software" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+                (mouseenter)="shift1(false)"
+                (mouseleave)="shift1(true)"
+                (click)="navToRoute('/interests', 0)">
+        <mat-card-title
+          [@shiftIn]="{ value: isShifted1 ===true ? 'shift_in' : 'shift_out', params:{signShift: '-100'}}">
           Software Entwicklung
         </mat-card-title>
         <mat-card-content lang="de" class="card-content"
-                          [@shiftIn]="{ value: isShifted ===false ? 'shift_in' : 'shift_out', params:{signShift: '+100'}}">
-          Software Entwicklung ist geil!
+                          [@shiftIn]="{ value: isShifted1 ===false ? 'shift_in' : 'shift_out', params:{signShift: '+100'}}">
+          Meine Motivation und Interessen für die Software Entwicklung.
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
-        <mat-card-title>Skillsheet</mat-card-title>
-        <mat-card-content class="card-content">
-          Meine wichtigsten und ausgeprägtesten Fähigkeiten.
+      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+                (mouseenter)="shift2(false)"
+                (mouseleave)="shift2(true)"
+                (click)="navToRoute('/skillset', 1)">
+        <mat-card-title
+          [@shiftIn]="{ value: isShifted2 ===true ? 'shift_in' : 'shift_out', params:{signShift: '-100'}}">
+          Skillsheet
+        </mat-card-title>
+        <mat-card-content class="card-content"
+                          [@shiftIn]="{ value: isShifted2 ===false ? 'shift_in' : 'shift_out', params:{signShift: '+100'}}">
+          Eine Übersicht meiner wichtigstens und ausgeprägtesten Fähigkeiten nach Selbsteinschätzung.
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
-        <mat-card-title>Lebenslauf</mat-card-title>
-        <mat-card-content class="card-content">
+      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+                (mouseenter)="shift3(false)"
+                (mouseleave)="shift3(true)"
+                (click)="navToRoute('/aboutme', 2)">
+        <mat-card-title
+          [@shiftIn]="{ value: isShifted3 ===true ? 'shift_in' : 'shift_out', params:{signShift: '-100'}}">
+          Lebenslauf
+        </mat-card-title>
+        <mat-card-content class="card-content"
+                          [@shiftIn]="{ value: isShifted3 ===false ? 'shift_in' : 'shift_out', params:{signShift: '+100'}}">
           Eine Übersicht meiner beruflichen und akademischen Stationen.
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="item-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%">
-        <mat-card-title>Persönliches</mat-card-title>
-        <mat-card-content class="card-content">
-          Ein kurze Selbstdarstellung meiner Person.
+      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+                (mouseenter)="shift4(false)"
+                (mouseleave)="shift4(true)"
+                (click)="navToRoute('/interests', 3)">
+        <mat-card-title
+          [@shiftIn]="{ value: isShifted4 ===true ? 'shift_in' : 'shift_out', params:{signShift: '-100'}}">
+          Persönliches
+        </mat-card-title>
+        <mat-card-content class="card-content"
+                          [@shiftIn]="{ value: isShifted4 ===false ? 'shift_in' : 'shift_out', params:{signShift: '+100'}}">
+          Ein kurze Selbstdarstellung meiner Person und Interessen.
         </mat-card-content>
       </mat-card>
     </div>

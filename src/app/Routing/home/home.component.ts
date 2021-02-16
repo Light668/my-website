@@ -12,7 +12,10 @@ import {ScrolledView, ViewServiceService} from '../../service/view-service.servi
 export class HomeComponent implements OnInit {
 
   public isFaded = false;
-  public isShifted = true;
+  public isShifted1 = true;
+  public isShifted2 = true;
+  public isShifted3 = true;
+  public isShifted4 = true;
 
   constructor(private router: Router, private scrollViewService: ViewServiceService) {
   }
@@ -23,14 +26,42 @@ export class HomeComponent implements OnInit {
     }, 10);
   }
 
-  shift(shifted: boolean) {
-    this.isShifted = shifted;
-    console.log(this.isShifted, 'shift');
+  shift1(shifted: boolean) {
+    this.isShifted1 = shifted;
+    console.log(this.isShifted1, 'shift');
   }
 
-  public navToRoute(s: string) {
-    console.log('navigate to route: ', s);
-    this.router.navigateByUrl(s);
-    this.scrollViewService.scrolledView$.next(ScrolledView.SOFTWARE_DEV);
+  shift2(shifted: boolean) {
+    this.isShifted2 = shifted;
+    console.log(this.isShifted2, 'shift');
+  }
+
+  shift3(shifted: boolean) {
+    this.isShifted3 = shifted;
+    console.log(this.isShifted3, 'shift');
+  }
+
+  shift4(shifted: boolean) {
+    this.isShifted4 = shifted;
+    console.log(this.isShifted4, 'shift');
+  }
+
+  public navToRoute(route: string, scroll: number) {
+    console.log('navigate to route: ', route);
+    this.router.navigateByUrl(route);
+    switch (scroll) {
+      case 0:
+        this.scrollViewService.scrolledView$.next(ScrolledView.SOFTWARE_DEV);
+        break;
+      case 1:
+        this.scrollViewService.scrolledView$.next(ScrolledView.SKILLSHEET);
+        break;
+      case 2:
+        this.scrollViewService.scrolledView$.next(ScrolledView.INTERACTIVECV);
+        break;
+      case 3:
+        this.scrollViewService.scrolledView$.next(ScrolledView.MYPERSON);
+        break;
+    }
   }
 }

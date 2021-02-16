@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ScrolledView, ViewServiceService} from '../../service/view-service.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -7,11 +8,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AboutmeComponent implements OnInit {
 
-  constructor() {
+  constructor(private scrollViewService: ViewServiceService) {
   }
 
   ngOnInit() {
-
+    this.scrollViewService.scrolledView$.subscribe((sV: ScrolledView) => {
+      if (sV !== undefined &&
+        sV === ScrolledView.INTERACTIVECV) {
+        const id = 'interactive-cv';
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          element.scrollIntoView();
+        }, 200);
+      }
+    });
   }
 
   animationEnded(event) {
