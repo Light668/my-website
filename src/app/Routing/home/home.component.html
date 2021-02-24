@@ -3,8 +3,8 @@
     <h2 id="welcome-msg" [@fadeIn]="isFaded===true ? 'in' : 'out' ">
       Willkommen auf meiner persönlichen Entwicklerseite!
     </h2>
-    <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="30px" fxLayoutAlign="flex-start">
-      <mat-card class="item-card welcome-card" id="software" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="30px" fxLayoutAlign="flex-start">
+      <mat-card class="item-card welcome-card" id="software" fxFlex="0 1 calc(25%-30px)" fxFlex.lt-sm="100%"
                 (mouseenter)="shift1(false)"
                 (mouseleave)="shift1(true)"
                 (click)="navToRoute('/interests', 0)">
@@ -18,7 +18,7 @@
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(25%-30px)" fxFlex.lt-sm="100%"
                 (mouseenter)="shift2(false)"
                 (mouseleave)="shift2(true)"
                 (click)="navToRoute('/skillset', 1)">
@@ -32,7 +32,7 @@
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(25%-30px)" fxFlex.lt-sm="100%"
                 (mouseenter)="shift3(false)"
                 (mouseleave)="shift3(true)"
                 (click)="navToRoute('/aboutme', 2)">
@@ -46,7 +46,7 @@
         </mat-card-content>
       </mat-card>
 
-      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(50%-30px)" fxFlex.lt-sm="100%"
+      <mat-card class="item-card welcome-card" fxFlex="0 1 calc(25%-30px)" fxFlex.lt-sm="100%"
                 (mouseenter)="shift4(false)"
                 (mouseleave)="shift4(true)"
                 (click)="navToRoute('/interests', 3)">
