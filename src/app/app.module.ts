@@ -1,27 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { InterestsComponent } from './Routing/interests/interests.component';
-import { SkillsetComponent } from './Routing/skillset/skillset.component';
-import { AboutmeComponent } from './Routing/aboutme/aboutme.component';
-import { AboutsiteComponent } from './Routing/aboutsite/aboutsite.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatStepperModule } from '@angular/material/stepper';
-import { MatCardModule } from '@angular/material/card';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { MatTreeModule } from '@angular/material/tree';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './Routing/home/home.component';
-
+import {AppComponent} from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {InterestsComponent} from './Routing/interests/interests.component';
+import {SkillsetComponent} from './Routing/skillset/skillset.component';
+import {AboutmeComponent} from './Routing/aboutme/aboutme.component';
+import {AboutsiteComponent} from './Routing/aboutsite/aboutsite.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTreeModule} from '@angular/material/tree';
+import {FooterComponent} from './footer/footer.component';
+import {HomeComponent} from './Routing/home/home.component';
 
 @NgModule({
   declarations: [
@@ -52,4 +51,6 @@ import { HomeComponent } from './Routing/home/home.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+}

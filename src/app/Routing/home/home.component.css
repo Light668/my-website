@@ -1,7 +1,6 @@
 .home-content {
   margin-top: 20px;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin: 0 10%;
 }
 
 #welcome-msg {
@@ -20,6 +19,25 @@
   color: #ffffff;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .home-content {
+    margin: 0 3% !important;
+  }
+  .card-container {
+    flex-direction: column !important;
+  }
+  .card-container > .mat-card {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .home-content {
+    margin: 0 3% !important;
+  }
+}
+
 
 /*.welcome-card:hover {
   cursor: pointer;

@@ -14,7 +14,7 @@ export class AppComponent {
   }
 
   public navToRoute(s: string) {
-    console.log('navigate to route: ', s);
+    // console.log('navigate to route: ', s);
     this.router.navigateByUrl(s);
     this.opened = false;
   }

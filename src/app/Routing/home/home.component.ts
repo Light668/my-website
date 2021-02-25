@@ -9,6 +9,7 @@ import {ScrolledView, ViewServiceService} from '../../service/view-service.servi
   styleUrls: ['./home.component.css'],
   animations: [fadeInOut, shiftIn],
 })
+
 export class HomeComponent implements OnInit {
 
   public isFaded = false;
@@ -28,26 +29,26 @@ export class HomeComponent implements OnInit {
 
   shift1(shifted: boolean) {
     this.isShifted1 = shifted;
-    console.log(this.isShifted1, 'shift');
+    //  console.log(this.isShifted1, 'shift');
   }
 
   shift2(shifted: boolean) {
     this.isShifted2 = shifted;
-    console.log(this.isShifted2, 'shift');
+    //  console.log(this.isShifted2, 'shift');
   }
 
   shift3(shifted: boolean) {
     this.isShifted3 = shifted;
-    console.log(this.isShifted3, 'shift');
+    // console.log(this.isShifted3, 'shift');
   }
 
   shift4(shifted: boolean) {
     this.isShifted4 = shifted;
-    console.log(this.isShifted4, 'shift');
+    // console.log(this.isShifted4, 'shift');
   }
 
   public navToRoute(route: string, scroll: number) {
-    console.log('navigate to route: ', route);
+    // console.log('navigate to route: ', route);
     this.router.navigateByUrl(route);
     switch (scroll) {
       case 0:
