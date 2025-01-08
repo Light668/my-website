@@ -10,7 +10,6 @@ import {InterestsComponent} from './Routing/interests/interests.component';
 import {SkillsetComponent} from './Routing/skillset/skillset.component';
 import {AboutmeComponent} from './Routing/aboutme/aboutme.component';
 import {AboutsiteComponent} from './Routing/aboutsite/aboutsite.component';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatStepperModule} from '@angular/material/stepper';
@@ -42,7 +41,6 @@ import {HomeComponent} from './Routing/home/home.component';
     MatIconModule,
     MatSidenavModule,
     MatButtonModule,
-    FlexLayoutModule,
     MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
