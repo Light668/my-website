@@ -1,33 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { MediaObserver } from '@angular/flex-layout';
-import {ScrolledView, ViewServiceService} from '../../service/view-service.service';
+import { ScrolledView, ViewServiceService } from '../../service/view-service.service';
+import { MatCardModule } from '@angular/material/card';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { FooterComponent } from 'src/app/footer/footer.component';
 
 
 @Component({
   selector: 'app-skillset',
   templateUrl: './skillset.component.html',
-  styleUrls: ['./skillset.component.css']
+  styleUrls: ['./skillset.component.css'],
+  standalone: true,
+  imports: [MatCardModule, CdkAccordionModule, FooterComponent]
 })
 export class SkillsetComponent implements OnInit {
 
   value = 0;
   intervalId;
 
-  constructor(public media: MediaObserver, private scrollViewService: ViewServiceService) {
+  constructor(private scrollViewService: ViewServiceService) {
 
   }
 
   ngOnInit() {
     this.scrollViewService.scrolledView$.subscribe((sV: ScrolledView) => {
-    if (sV !== undefined &&
-      sV === ScrolledView.SKILLSHEET) {
-      const id = 'skillsheet';
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        element.scrollIntoView();
-      }, 200);
-    }
-  });
+      if (sV !== undefined &&
+        sV === ScrolledView.SKILLSHEET) {
+        const id = 'skillsheet';
+        setTimeout(() => {
+          const element = document.getElementById(id);
+          element.scrollIntoView();
+        }, 200);
+      }
+    });
   }
 
   valueCalc(value: number) {
