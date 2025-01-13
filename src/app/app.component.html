@@ -1,7 +1,7 @@
-<div fxLayout="row" style="height: 100vh;" lang="de">
+<div style="height: 100vh;" lang="de">
   <mat-sidenav-container fxFlexFill class="example-container">
-    <mat-sidenav #sidenav fxLayout="column" [(opened)]="opened">
-      <div fxLayout="column">
+    <mat-sidenav #sidenav [(opened)]="opened">
+      <div>
         <a (click)="navToRoute('/home')" mat-button>Startseite</a>
         <a (click)="navToRoute('/skillset')" mat-button>Fähigkeiten</a>
         <a (click)="navToRoute('/interests')" mat-button>Interessen</a>
@@ -14,7 +14,7 @@
         <mat-toolbar-row>
           <span class="home-button" (click)="navToRoute('/home')">Meine Entwicklerseite</span>
         </mat-toolbar-row>
-        <mat-toolbar-row>
+        <mat-toolbar-row class="toolbar-row">
           <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
             <mat-icon>menu</mat-icon>
           </button>
