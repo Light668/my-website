@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { ViewServiceService } from './service/view-service.service';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -14,13 +15,13 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.css'],
   standalone: true,
   imports: [CommonModule, MatButtonModule, RouterOutlet, RouterLink, RouterLinkActive, MatSidenavModule,
-    MatToolbarModule, MatIconModule, RouterOutlet],
-  providers: [ViewServiceService]
+    MatToolbarModule, MatIconModule, RouterOutlet, FormsModule],  
 })
 
 export class AppComponent {
   title = 'my-app';
   opened = false;
+  console = console;
 
   constructor(private router: Router) {
   }
@@ -29,6 +30,11 @@ export class AppComponent {
     console.log('navigate to route: ', s);
     this.router.navigateByUrl(s);
     this.opened = false;
+  }
+
+  public toggleSideBar() {
+    this.opened = !this.opened;
+    console.log(this.opened);
   }
 }
 
