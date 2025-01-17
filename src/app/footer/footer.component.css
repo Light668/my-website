@@ -1,6 +1,11 @@
 .footer {
   color: #fff;
   background-color: #3f51b5;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: flex-start;
+  align-items: flex-start;
 }
 
 .linkedIn-logo {
@@ -16,12 +21,11 @@
   margin-top: 8px;
 }
 
-#description-email {
-  padding-top: 15px;
-}
-
 #description {
-  padding-top: 8px;
+  margin-right: 10px;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 20%;
 }
 
 .github-logo {
@@ -30,8 +34,40 @@
   padding-bottom: 8px;
 }
 
+.contact {
+  margin-right: 10px;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 15%;
+  margin-left: 10%;
+}
+
 .contact-info {
   width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  place-content: stretch center;
+  align-items: stretch;
+  max-width: 43%;
+  flex: 1 1 100%;
+}
+
+.footer-row-item {
+  margin-bottom: 10px;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex: 1 1 1e-09px;
+}
+
+.footer-item-child {
+  flex: 1 1 0%;
+  box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
 }
 
 #email-info {
