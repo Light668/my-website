@@ -3,6 +3,18 @@ mat-sidenav {
   width: 70%;
 }
 
+.sidenav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none
+  }
+}
+
 .sidenav-content {
   display: flex;
   flex-direction: column;
@@ -36,6 +48,12 @@ mat-sidenav {
   color: #3f51b5 !IMPORTANT;
 }
 
-.nav-routes > a:hover {
+@media (max-width: 768px) {
+  .nav-routes {    
+    display: none;
+  }
+}
+
+.nav-routes>a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
