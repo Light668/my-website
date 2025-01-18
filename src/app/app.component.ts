@@ -4,7 +4,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { ViewServiceService } from './service/view-service.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -15,7 +14,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.css'],
   standalone: true,
   imports: [CommonModule, MatButtonModule, RouterOutlet, RouterLink, RouterLinkActive, MatSidenavModule,
-    MatToolbarModule, MatIconModule, RouterOutlet, FormsModule],  
+    MatToolbarModule, MatIconModule, RouterOutlet, FormsModule],
 })
 
 export class AppComponent {
@@ -32,9 +31,5 @@ export class AppComponent {
     this.opened = false;
   }
 
-  public toggleSideBar() {
-    this.opened = !this.opened;
-    console.log(this.opened);
-  }
 }
 
