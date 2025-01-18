@@ -8,6 +8,7 @@ import { FooterComponent } from 'src/app/footer/footer.component';
   standalone: true,
   imports: [FooterComponent]
 })
+
 export class AboutsiteComponent implements OnInit {
 
   constructor() { }

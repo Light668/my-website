@@ -1,11 +1,37 @@
 .aboutsite-content {
-    margin-top: 30px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 0px;
 }
 
 .tech-image {
     width: auto;
     height: 170px;
     margin: auto;
+}
+
+.tech-components {
+    flex-flow: wrap;
+    box-sizing: border-box;
+    display: flex;
+    place-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.tech-items {
+    flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: calc(33.3% - 30px);
+    flex-shrink: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .tech-components {
+        flex-direction: column;        
+    }
 }
