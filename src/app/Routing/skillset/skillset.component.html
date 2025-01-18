@@ -8,20 +8,16 @@
     <mat-card>
       <div class="skill-legend">
         <ng-container *ngFor="let idx of [1,2,3,4,5,6,7,8,9,10]">
-          <span class="item" *ngIf="media.isActive('gt-xs')">{{idx}}</span>
-          <span class="item" *ngIf="media.isActive('lt-sm') && (idx == 1 || idx %5 ==0)">
+          <span class="item" *ngIf="isWebView">{{idx}}</span>
+          <span class="item" *ngIf="isMobileView && (idx == 1 || idx %5 ==0)">
             {{idx}}</span>
         </ng-container>
       </div>
-      <cdk-accordion multi="false" class="skillset-accordion">
-        <cdk-accordion-item>
-          <p class="bar-label ">Spring Boot und Backend</p>
-        </cdk-accordion-item>
-        <!-- <mat-expansion-panel>
+      <mat-accordion multi="false" class="skillset-accordion">
+        <mat-expansion-panel>
           <mat-expansion-panel-header>
-
-            <mat-progress-bar mode="determinate " [value]="valueCalc(5.25)" aria-labelledby="Spring "
-              aria-label="text ">
+            <p class="bar-label">Spring Boot und Backend</p>
+            <mat-progress-bar mode="determinate" [value]="valueCalc(5.25)" aria-labelledby="Spring " aria-label="text ">
             </mat-progress-bar>
           </mat-expansion-panel-header>
 
@@ -122,8 +118,8 @@
           <mat-progress-bar class="sub-bar " mode="determinate " [value]="valueCalc(4.5) " aria-labelledby="Spring "
             aria-label="text ">
           </mat-progress-bar>
-        </mat-expansion-panel> -->
-      </cdk-accordion>
+        </mat-expansion-panel>
+      </mat-accordion>
       <p>
         <b><u>Weitere IT-Fähigkeiten und Tools:</u></b>
       </p>
@@ -135,8 +131,6 @@
         <li>Office Anwendungen</li>
       </ul>
     </mat-card>
-  </div>
-  <div fxFlex>
-  </div>
+  </div>  
   <app-footer class="footer-container"></app-footer>
 </div>

@@ -1,18 +1,35 @@
-mat-progress-bar {
+/* mat-progress-bar {
     height: 20px;
 }
 
+md-progress-linear .md-container {
+    height: 20px;
+}
+
+md-progress-linear .md-container .md-bar {
+    height: 20px;
+} */
+
+.mat-mdc-progress-bar {
+    --mdc-linear-progress-track-height: 24px;
+    --mdc-linear-progress-active-indicator-height: 24px;
+}
+
 .bar-label {
+    color: white;
     z-index: 1000;
-    position: absolute;
-    color: #fff;
+    position: absolute;    
     margin-left: 8px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .header-bar {
-    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+    border-radius: inherit;
 }
 
 .sub-bar {
@@ -28,6 +45,11 @@ mat-progress-bar {
     /* padding-left: 25px; */
     margin-left: 24px;
     margin-right: 24px;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center space-between;
+    align-items: center;
 }
 
 .skillset-content {
