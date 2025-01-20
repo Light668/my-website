@@ -43,10 +43,10 @@ export class SkillsetComponent implements OnInit {
       .subscribe((result: BreakpointState) => {
 
         if (result.matches) {
-          console.log("screens matches Handset");
+          // console.log("screens matches Handset");
           this.isMobileView = true;
         } else {
-          console.log("screen does not match Handset");
+          // console.log("screen does not match Handset");
           this.isWebView = true;
         }
 
