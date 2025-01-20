@@ -1,6 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {animate, state, style, transition, trigger} from '@angular/animations';
-import {ScrolledView, ViewServiceService} from '../../service/view-service.service';
+import { Component, OnInit } from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { ScrolledView, ViewServiceService } from '../../service/view-service.service';
+import { MatCardModule } from '@angular/material/card';
+import { FooterComponent } from 'src/app/footer/footer.component';
 
 
 @Component({
@@ -27,6 +29,8 @@ import {ScrolledView, ViewServiceService} from '../../service/view-service.servi
   ],
   templateUrl: './interests.component.html',
   styleUrls: ['./interests.component.css'],
+  standalone: true,
+  imports: [MatCardModule, FooterComponent]
 })
 export class InterestsComponent implements OnInit {
 

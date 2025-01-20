@@ -1,10 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {ScrolledView, ViewServiceService} from '../../service/view-service.service';
+import { Component, OnInit } from '@angular/core';
+import { ScrolledView, ViewServiceService } from '../../service/view-service.service';
+import { FooterComponent } from 'src/app/footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatStepperModule } from '@angular/material/stepper';
 
 @Component({
   selector: 'app-aboutme',
   templateUrl: './aboutme.component.html',
-  styleUrls: ['./aboutme.component.css']
+  styleUrls: ['./aboutme.component.css'],
+  standalone: true,
+  imports: [FooterComponent, MatIconModule, MatStepperModule]
 })
 export class AboutmeComponent implements OnInit {
 

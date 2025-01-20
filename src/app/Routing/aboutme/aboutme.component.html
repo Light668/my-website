@@ -1,13 +1,21 @@
-<div class="page-content" fxLayout="column" fxLayoutAlign="start space-between" fxLayoutGap="0px">
-  <div class="aboutMe-content" fxFlex="1 1 auto">
+<div class="page-content">
+  <div class="aboutMe-content">
     <div>
       <h3 style="text-align: center;">Kurzinfo</h3>
-      Ich bin Timo Radtke, 34 Jahre alt, komme ursprünglich aus Münster und wohne zur Zeit in Soest. Nach meinem Studium
+      Ich bin Timo Radtke, 38 Jahre alt, komme ursprünglich aus Münster und wohne zur Zeit in Dortmund. Nach meinem
+      Studium
       der mathematischen Physik und anschließender Zeit als Wissenschaftler an der WWU Münster habe ich zunächst als Web
-      Entwickler für das Startup <i>Ad-Boxx</i> in Rheine gearbeitet. Anschließend war es mein Wunsch Lehrer zu werden,
-      konnte jedoch mein Referendariat nicht aufnehmen. Bis vor kurzem war ich als Software Entwickler für die
-      Breitenbach Software Engineering GmbH in Soest tätig. Zur Zeit bin ich auf der Suche nach einer anspruchsvollen
-      Tätigkeit als Entwickler.
+      Entwickler für das Startup <i>Ad-Boxx</i> in Rheine gearbeitet. Anschließend war ich als Software Entwickler für
+      die
+      <i>Breitenbach Software Engineering GmbH</i> in Soest tätig.
+      <br>
+      Zuletzt war ich 4 Jahre bei der <i>BWS Consulting Group GmbH</i> in Wolfsburg als Software Entwickler und AWS
+      Cloud Architekt
+      beschäftigt und konnte sehr viele Erfahrungen im agilen Projektmanagement und Software Product Lifecycling
+      sammeln.
+      Dadurch habe ich meine Passion für das System Engineering und den operativen Bereich, u.a.
+      Automatisierungsprozesse, Cloud Infrastruktur
+      und DevOps entdeckt.
     </div>
 
     <div class="headline-stepper" id="interactive-cv">
@@ -15,7 +23,7 @@
       Hier eine kurze Übersicht meiner bisherigen Stationen. Für eine detailierte Darstellung bitte den Stepper
       nutzen.
     </div>
-    <mat-vertical-stepper id="stepper" (selectionChange)="animationEnded($event)">
+    <mat-stepper orientation="vertical" id="stepper" (selectionChange)="animationEnded($event)">
       <ng-template matStepperIcon="edit">
         <mat-icon>donut_large</mat-icon>
       </ng-template>
@@ -84,7 +92,7 @@
         <ng-template matStepLabel>
           <p class="headline">Wissenschaftlicher Mitarbeiter</p>
           <p class="date">Oktober 2015 - September 2016</p>
-          <p class="location">Institut für theoretische Physik Münster</p>
+          <p class="location">Institut für theoretische Physik, Münster</p>
         </ng-template>
         <ng-template matStepperIcon="done">
           <mat-icon>stars</mat-icon>
@@ -95,41 +103,34 @@
       </mat-step>
       <mat-step id="step3">
         <ng-template matStepLabel>
-          <p class="headline">Web Entwickler</p>
-          <p class="date">April 2017 - Oktober 2017</p>
-          <p class="location">Ad-Boxx Rheine</p>
+          <p class="headline">Software Entwickler</p>
+          <p class="date">April 2017 - Dezember 2018</p>
+          <p class="location">Ad-Boxx, Rheine</p>
         </ng-template>
-        <p>Web Entwickler</p>
+        <p>Web Entwicklung</p>
         <ul>
           <li>Webpräsenz in Form einer SPA in AngularJS</li>
           <li>Werbeportal E-Marketing Plattform</li>
-          <li>Backend in Node.js</li>
           <li>Deployment und IT-Administration</li>
+        </ul>
+        <p>Java Entwicklung</p>
+        <ul>
+          <li>Entwicklung des Datenbankmodells</li>
+          <li>Logistische Prozessmodellierung</li>
         </ul>
         <p>Organisation</p>
         <ul>
           <li>Planung und Konzeption im Team</li>
-          <li>Kommunikation der IT-Projekte</li>
-          <li>Beratung der Geschäftsführung</li>
+          <li>ERM Modellierung der Datenbanken</li>
+          <li>CI/CD Automatisierung</li>
         </ul>
       </mat-step>
       <mat-step id="step4">
         <ng-template matStepLabel>
-          <p class="headline">Vorbereitung Referendariat</p>
-          <p class="date">Januar 2018 - Juli 2018</p>
-          <p class="location">WWU Münster</p>
-        </ng-template>
-        <p>Studium der Didaktik als Gasthörer</p>
-        <p>Erstellung eines Kolloquiums</p>
-        <p>Unterichtsvorbereitung</p>
-      </mat-step>
-      <mat-step id="step5">
-        <ng-template matStepLabel>
           <p class="headline">Software Entwickler</p>
           <p class="date">August 2020 - Februar 2021</p>
-          <p class="location">Breitenbach Software Engineering GmbH Soest</p>
+          <p class="location">Breitenbach Software Engineering GmbH, Soest</p>
         </ng-template>
-        <p>Einarbeitung in die hausinterne Pragrammiersprache diasE</p>
         <p>Kernentwickler der Systemarchitektur</p>
         <ul>
           <li>Anforderungsanalyse und Konzeption</li>
@@ -139,13 +140,40 @@
         </ul>
         <p>diasE Entwicklung der Lohnzentrale</p>
         <ul>
+          <li>Einarbeitung in die hausinterne Pragrammiersprache diasE</li>
           <li>Projektplanung und Konzeption im Team</li>
           <li>Implementation von Auswertungsprogrammen</li>
         </ul>
       </mat-step>
-    </mat-vertical-stepper>
+      <mat-step id="step5">
+        <ng-template matStepLabel>
+          <p class="headline">Software Entwickler & Cloud Architekt</p>
+          <p class="date">April 2021 - Februar 2025</p>
+          <p class="location">BWS Consulting Group GmbH, Wolfsburg</p>
+        </ng-template>
+        <p>Backend Entwickler</p>
+        <ul>
+          <li>Implementation einer Cloud Applikation zur Verwaltung von Ladesäulen basierend auf dem OCPP Protokoll</li>
+          <li>Kundenberatung im agilen Projektmanagement (Scrum)</li>
+          <li>TechStack: Java, Websockets, SpringBoot, Azure Cloud</li>
+        </ul>
+        <p>Frontend Entwickler</p>
+        <ul>
+          <li>Implementation von FeatureApps zur Steuerung einer Virtual Reality Engine</li>
+          <li>Anbindung an das zentrale Cloud-Backend zur Echtzeit Datenübertragung</li>
+          <li>Release- und Rollout-Unterstützung der Kunden und Stackholder</li>
+          <li>TechStack: React, TypeScript, FeatureApps, MQTT over Websockets</li>
+        </ul>
+        <p>AWS Cloud Architekt</p>
+        <ul>
+          <li>Implementation der Cloud Infrastruktur mittels Cloudformation (IaC) im VWS2 Umfeld</li>
+          <li>Kostenoptimierung durch Prozessautomatisierung</li>
+          <li>zentralisierte Monitoring und ETL Infrastruktur</li>
+          <li>3rd-Level Support der Entwickler Teams</li>
+          <li>TechStack: AWS Services, Docker, ShellScripting, OpenTelemetry, Grafana</li>
+        </ul>
+      </mat-step>
+    </mat-stepper>
   </div>
-  <!-- <div fxFlex>
-  </div> -->
-  <app-footer fxFlex="1 1 150px" class="footer-container"></app-footer>
+  <app-footer class="footer-container"></app-footer>
 </div>

@@ -1,12 +1,34 @@
 .footer {
   color: #fff;
   background-color: #3f51b5;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .linkedin-info {
+    display: none;
+  }
 }
 
 .linkedIn-logo {
   height: 32px;
   width: auto;
   background-color: #fff;
+}
+
+.linkedin-info {
+  margin-left: 15px;
+  vertical-align: super;
+}
+
+@media screen and (max-width: 768px) {
+  .email-info {
+    display: none;
+  }
 }
 
 .email-logo {
@@ -16,12 +38,28 @@
   margin-top: 8px;
 }
 
-#description-email {
-  padding-top: 15px;
+.email-info {
+  margin-left: 15px;
+  vertical-align: super;
+  padding-top: 12px;
 }
 
-#description {
-  padding-top: 8px;
+@media screen and (max-width: 768px) {
+  .description {
+    flex: 1 1 50%;
+  }
+}
+
+.description {
+  margin-right: 10px;
+  flex: 1 1 20%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .github-info {
+    display: none;
+  }
 }
 
 .github-logo {
@@ -30,23 +68,80 @@
   padding-bottom: 8px;
 }
 
-.contact-info {
-  width: 100%;
-}
-
-#email-info {
-  margin-left: 15px;
-  vertical-align: super;
-  padding-top: 12px;
-}
-
-#linkedin-info {
-  margin-left: 15px;
-  vertical-align: super;
-}
-
-#github-info {
+.github-info {
   margin-left: 15px;
   vertical-align: super;
   padding-top: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    max-width: 25%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact {
+    max-width: 15%;
+    margin-left: 10%;
+    flex: 1 1 30%;
+  }
+}
+
+.contact {
+  margin-right: 10px;
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.contact-info {
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  place-content: stretch center;
+  align-items: stretch;
+  max-width: 70%;
+  flex: 1 1;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-row-item {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-row-item {
+    margin-left: 10%;
+  }
+}
+
+.footer-row-item {
+  margin-bottom: 10px;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  flex: 1 1 1e-09px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-item-child {
+    flex: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-item-child {
+    flex: 1 1 80%;
+  }
+}
+
+.footer-item-child {
+  box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
 }

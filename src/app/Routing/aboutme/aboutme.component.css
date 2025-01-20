@@ -4,8 +4,10 @@
 
 .aboutMe-content {
     margin-top: 20px;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    flex: 1 1 auto;
 }
 
 .date {

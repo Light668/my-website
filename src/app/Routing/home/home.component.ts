@@ -1,13 +1,17 @@
-import {Component, OnInit} from '@angular/core';
-import {fadeInOut, shiftIn} from '../../animations/animations';
-import {Router} from '@angular/router';
-import {ScrolledView, ViewServiceService} from '../../service/view-service.service';
+import { Component, OnInit } from '@angular/core';
+import { fadeInOut, shiftIn } from '../../animations/animations';
+import { Router } from '@angular/router';
+import { ScrolledView, ViewServiceService } from '../../service/view-service.service';
+import { FooterComponent } from 'src/app/footer/footer.component';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [fadeInOut, shiftIn],
+  standalone: true,
+  imports: [FooterComponent, MatCardModule]
 })
 
 export class HomeComponent implements OnInit {
